@@ -520,6 +520,9 @@ function FormatItemInfo(itemData, dom) {
             $(".item-info-description").html(
                 "<p>" + itemData.info.uses + " uses left.</p>"
             );
+        } else if (itemData.name == "vehiclekey") {
+            $(".item-info-title").html('<p>' + itemData.info.model + '</p>');
+            $(".item-info-description").html('<p>Plate : ' + itemData.info.plate + '</p>');
         } else if (itemData.type == "weapon") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             if (itemData.info.ammo == undefined) {

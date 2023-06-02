@@ -12,6 +12,12 @@ p { margin: 0 !important; }
 .text-h6 { color: #fff; }
 .q-card__section.q-card__section--vert.q-pt-none { color: #fff; }
 
+@media screen and (min-width: 2540px) {
+    #itembox-label {
+        min-height: 1.8vh;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -310,6 +316,18 @@ body {
     font-size: 1.5vh;
     font-weight: 300;
     font-family: 'Roboto', sans-serif !important;
+}
+.inv-option-item > label {
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    text-transform: normal;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    margin-right: 10px;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .inv-option-item {
@@ -1118,4 +1136,11 @@ body {
 
 .weapon-attachments-back:hover {
     background-color: rgb(18, 18, 18);
+}
+
+.color-picker-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

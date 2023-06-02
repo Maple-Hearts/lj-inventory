@@ -50,8 +50,9 @@
             </div>
                 <div class="inv-options">
                     <div class="inv-options-list">
-                        <img class="brand-logo" src="./images/lj-symbol.svg"></img>
-<input type="number" id="item-amount" class="inv-option-item" min=1 max="10000" placeholder="Amount" pattern="[0-9]" onfocus="this.value=''" placeholder="" oninput="validity.valid||(value='');"></input>
+                        <!-- <img class="brand-logo" src="./images/lj-symbol.svg"></img> -->
+                        <input type="number" id="item-amount" class="inv-option-item" min=1 max="10000" placeholder="Amount"
+                        pattern="[0-9]" onfocus="this.value=''" placeholder="" oninput="validity.valid||(value='');"></input>
                         <div class="inv-option-item" id="item-use"><p>Use</p></div>
                         <!-- <img class="inv-option-hand" id= "item-use" src="images/hand-1.png"> -->
                         <div class="inv-option-item" id="item-give"><p>Give</p></div>
@@ -59,6 +60,10 @@
                         <div class="combine-option-container">
                             <div class="btn-combine CombineItem"><p>Combine</p></div>
                             <div class="btn-combine SwitchItem"><p>Switch</p></div>
+                        </div>
+                        <div class="inv-option-item color-picker-container">
+                          <label for="favcolor">Color:</label>
+                          <input type="color" id="favcolor" name="favcolor" value="#ff0000">
                         </div>
                     </div>
                 </div>

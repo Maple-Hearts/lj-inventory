@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'lj-Inventory'
-version '1.1'
+version '1.0'
 
 shared_scripts {
 	'config.lua',
@@ -11,7 +11,8 @@ shared_scripts {
 
 server_scripts {
 	'@oxmysql/lib/MySQL.lua',
-	'server/main.lua'
+	'server/main.lua',
+	'server/decay.lua'
 }
 
 client_script 'client/main.lua'
@@ -32,5 +33,6 @@ files {
 	'html/*.ttf'
 }
 
+dependency 'qb-weapons'
 
 lua54 'yes'
